@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+	<title>
+		labas html
+	</title>
+	<script>
+		function skaiciuoti() {
+		
+			var sk1 = parseInt ( document.getElementById ( 'sk1' ).value );
+			var sk2 = parseInt ( document.getElementById ( 'sk2' ).value );
+			var sk3 = parseInt ( document.getElementById ( 'sk3' ).value );
+			
+			rez_str = 'Įvesti 3 skaičiai: ' + sk1 + ' ' + sk2 + ' ' + sk3 + '<br>';
+			
+			rez = document.getElementById ( 'rez' );
+			rez.innerHTML = rez_str;
+		}
+	</script>
+</head>
+<body>
+	skaičius 1<br>
+	<input type="text" id="sk1"><br>
+	skaičius 2<br>
+	<input type="text" id="sk2"><br>
+	skaičius 3<br>
+	<input type="text" id="sk3"><br>
+	<input type="button" onClick="skaiciuoti()" value="dariti">
+	<div id="rez">
+	</div>
+</body>
+</html>
